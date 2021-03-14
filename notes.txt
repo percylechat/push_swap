@@ -1,0 +1,39 @@
+sa : swap a - intervertit les 2 premiers éléments au sommet de la pile a. Ne fait
+rien s’il n’y en a qu’un ou aucun.
+sb : swap b - intervertit les 2 premiers éléments au sommet de la pile b. Ne fait
+rien s’il n’y en a qu’un ou aucun.
+ss : sa et sb en même temps.
+pa : push a - prend le premier élément au sommet de b et le met sur a. Ne fait
+rien si b est vide.
+pb : push b - prend le premier élément au sommet de a et le met sur b. Ne fait
+rien si a est vide.
+
+ra : rotate a - décale d’une position vers le haut tous les élements de la pile a.
+Le premier élément devient le dernier.
+
+rb : rotate b - décale d’une position vers le haut tous les élements de la pile b.
+Le premier élément devient le dernier.
+
+rr : ra et rb en même temps.
+
+rra : reverse rotate a - décale d’une position vers le bas tous les élements de
+la pile a. Le dernier élément devient le premier.
+
+rrb : reverse rotate b - décale d’une position vers le bas tous les élements de
+la pile b. Le dernier élément devient le premier.
+
+rrr : rra et rrb en même temps.
+
+Vous devez écrire un programme nommé checker qui prend en paramètre la pile
+a sous la forme d’une liste d’entiers. Le premier paramètre est au sommet de la
+pile (attention donc à l’ordre).
+• Checker doit ensuite attendre de lire des instructions sur l’entrée standard, chaque
+instruction suivie par un ’\n’. Une fois toutes les instructions lues, le checker va
+exécuter ces instructions sur la pile d’entiers passée en paramètres.
+• Si après exécution la pile a est bien triée et la pile b est vide, alors checker doit
+afficher "OK" suivi par un ’\n’ sur la sortie standard. Dans tous les autres cas,
+checker doit afficher "KO" suivi par un ’\n’ sur la sortie standard.
+• En cas d’erreur, vous devez afficher Error suivi d’un ’\n’ sur la sortie d’erreur.
+Par exemple si certains paramètres ne sont pas des nombres, certains paramètres
+ne tiennent pas dans un int, s’il y a des doublons, ou bien sûr si une instruction
+n’existe pas ou est mal formatée.
